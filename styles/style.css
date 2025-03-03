@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #205c8c;
+    --secondary-color: #f0dc1c;
+    --title-font-family: 'Times New Roman', Times, serif;
+    --text-font-family: "Arial", "sans-serif";
+    --padding-inline-containers: 7em;
+    --padding-block-containers: 5em;
+    --dots-bg: #80a4be;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font-family);
+    font-size: 18px;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vw;
+}
+
+section {
+    padding-inline: var(--padding-inline-containers);
+    width: 100%;
+}
+
+header {
+    padding-inline: var(--padding-inline-containers);
+    width: 100%;
+    padding-block: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2;
+    background-color: var(--secondary-color);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3em;
+}
+
+header div:nth-child(2) {
+    width: 50%;
+}
+
+header div:first-child {
+    width: 5em;
+}
+
+header img {
+    width: 100%;
+}
+
+.portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    min-height: 500px;
+    background: radial-gradient(rgb(0, 0, 0, .6), rgb(0, 0, 0, .6)),url('../assets/harvard.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portada h1 {
+    color: #fff;
+    font-family: var(--title-font-family);
+    font-size: 5em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.bulletin {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-block: var(--padding-block-containers);
+}
+
+.bulletin .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.bulletin .slider .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.bulletin .slider .content .card {
+    width: clamp(200px, 400px, 500px);
+    height: clamp(200px, 250px, 300px);
+    padding: 1em 2em;
+    background-color: var(--primary-color);
+    border-radius: 1em;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card h3 {
+    font-size: 1.5em;
+}
+
+.slider .dots {
+    display: flex;
+    gap: .5em;
+}
+
+.slider .dot {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: var(--dots-bg);
+    box-shadow: 0px 2px 8px #000;
+    border: .1px solid #a39e9e;
+}
+
+.slider .dot:first-child {
+    background-color: #000;
+}
+
+.memorial {
+    position: relative;
+    display: flex;
+    background-color: #a39e9e;
+}
