@@ -139,11 +139,11 @@ header img {
     background-color: #000;
 }
 
-.memorial {
+.side-image {
     height: 50vh;
 }
 
-.memorial .container {
+.side-image .container {
     height: 100%;
     display: flex;
     background-color: var(--primary-color);
@@ -153,7 +153,11 @@ header img {
     color: #d9d9d9;
 }
 
-.memorial .container .info {
+.aboutus-section .container {
+    flex-direction: row-reverse;
+}
+
+.side-image .container .info {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
@@ -162,4 +166,39 @@ header img {
 
 .info h2, .info h2 span {
     font-size: 2.5em;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: var(--padding-inline-containers);
+    font-size: 1.3em;
+    padding-block: 4em;
+}
+
+footer article img {
+    width: 5em;
+    filter: drop-shadow(4px 4px 2px #00000037);
+}
+
+footer article ul li {
+    list-style: none;
+}
+
+footer article ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3em;
+}
+
+footer article p {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3em;
+
 }
