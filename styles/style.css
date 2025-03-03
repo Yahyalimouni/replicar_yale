@@ -3,7 +3,7 @@
     --secondary-color: #f0dc1c;
     --title-font-family: 'Times New Roman', Times, serif;
     --text-font-family: "Arial", "sans-serif";
-    --padding-inline-containers: 7em;
+    --padding-inline-containers: 10em;
     --padding-block-containers: 5em;
     --dots-bg: #80a4be;
 }
@@ -14,6 +14,7 @@
     box-sizing: border-box;
     font-family: var(--text-font-family);
     font-size: 18px;
+    text-align: justify;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 }
 
 section {
-    padding-inline: var(--padding-inline-containers);
+    padding: var(--padding-block-containers) var(--padding-inline-containers);
     width: 100%;
 }
 
@@ -113,6 +114,7 @@ header img {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    box-shadow: 1px 1px 10px #000;
 }
 
 .card h3 {
@@ -138,7 +140,26 @@ header img {
 }
 
 .memorial {
-    position: relative;
+    height: 50vh;
+}
+
+.memorial .container {
+    height: 100%;
     display: flex;
-    background-color: #a39e9e;
+    background-color: var(--primary-color);
+    border-radius: 1em;
+    justify-content: center;
+    align-items: center;
+    color: #d9d9d9;
+}
+
+.memorial .container .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-inline: 3em;
+}
+
+.info h2, .info h2 span {
+    font-size: 2.5em;
 }
