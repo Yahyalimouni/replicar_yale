@@ -171,8 +171,12 @@ h2 {
     padding-inline: 3em;
 }
 
-info h2 span {
+.info h2 span {
     font-size: var(--h2-font-size);
+}
+
+.info h2 {
+    color: #fff;
 }
 
 /* Soa */
