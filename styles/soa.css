@@ -1,0 +1,61 @@
+.calendars {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-block: var(--padding-block-containers);
+}
+
+.calendars .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    justify-content: space-between;
+
+}
+
+.calendars .content .card {
+    width: clamp(500px, 400px, 500px);
+    height: clamp(350px, 250px, 300px);
+    padding: 1em 2em;
+    background-color: var(--primary-color);
+    border-radius: 1em;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.calendars .content .card a {
+    font-size: 1em;
+    color: #fff;
+}
+
+.calendars .content .card p {
+    padding-block: 1em;
+}
+
+h3 {
+    text-align: left;
+
+}
+
+
+/* <iframe frameborder="8" scrolling="yes"
+src="https://calendar.google.com/calendar/embed?src=es.spain%23holiday%40group.v.calendar.google.com&ctz=Europe%2FMadrid"
+width="100%" height="800px"
+style="border:solid 1px #777" alt="calendar">                        
+</iframe>
+
+ */
+
+
+.soa iframe {
+    border: solid 1px #000;
+    border-radius: 10px;
+    width: 50%;
+    height: 20em;
+    margin-top: 20px;
+    box-shadow: 1px 1px 10px #000;
+}
